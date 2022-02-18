@@ -1,0 +1,20 @@
+{
+  "name": "percy",
+  "version": "1.0.0",
+  "description": "Visual regression testing with TestCafe and Percy",
+  "main": "index.js",
+  "scripts": {
+    "test:percy": "set PERCY_TOKEN=d216a7bd506c2c80c5216165dd5dff9a195a254367989e326f4f98f4dee01f03 && percy exec -- testcafe chrome ./tests"
+  },
+  "keywords": [
+    "TestCafe",
+    "Percy"
+  ],
+  "author": "Javier Gerard",
+  "license": "ISC",
+  "dependencies": {
+    "@percy/cli": "^1.0.0-beta.75",
+    "@percy/testcafe": "^1.0.1",
+    "testcafe": "^1.18.3"
+  }
+}
